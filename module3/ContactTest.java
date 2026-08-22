@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
  
 public class ContactTest {
  
- private Contact contact; 
+ private Contact contact;
  
   @BeforeEach
   void setUp() {
@@ -25,5 +25,11 @@ public class ContactTest {
   void toString_containsBothFields() {
     assertTrue(contact.toString().contains("Ada Lovelace"));
     assertTrue(contact.toString().contains("+1 617 555 0101"));
+  }
+
+  @Test
+  void setName_updatesNameCorrectly() {
+    contact.setName("Bob Smith");
+    assertEquals("Bob Smith", contact.getName());
   }
 } 

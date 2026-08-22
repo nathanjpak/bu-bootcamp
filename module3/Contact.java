@@ -19,4 +19,8 @@ public class Contact {
   public String toString() {
     return this.name + " | " + this.phone;
   }
+
+  public void setName(String name) {
+    this.name = name;
+  }
 }

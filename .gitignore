@@ -1,3 +1,8 @@
 *.jar
-*.class
 .vscode/**/*
+
+*.class
+
+# Compiled c files
+hello
+math_ops
